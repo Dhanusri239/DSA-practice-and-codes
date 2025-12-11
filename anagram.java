@@ -2,7 +2,7 @@
 import java.util.*;
 public class anagram {
     public static boolean f(String s,String t){
-        if(s.length()==t.length()){
+        if(s.length()!=t.length())return false;
             int a[]=new int[26];
             for(int i=0;i<s.length();i++){
                 a[s.charAt(i)-'a']++;
@@ -11,7 +11,6 @@ public class anagram {
             for(int c:a){
                 if(c!=0)return false;
             }
-        }
         return true;
     }
     public static void main(String[]args){
@@ -22,3 +21,4 @@ public class anagram {
         System.out.println(r);
     }
 }
+
