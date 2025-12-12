@@ -10,6 +10,7 @@ public class containduplicate2{
         int k=sc.nextInt();
         boolean r=f(a,k);
         System.out.println(r);
+        sc.close();
     }
     public static boolean f(int a[],int k){
         Map<Integer,Integer>m=new HashMap<>();
