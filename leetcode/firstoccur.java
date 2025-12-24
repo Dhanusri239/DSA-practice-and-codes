@@ -7,18 +7,18 @@ public class firstoccur {
         int r= m(s,t);
         System.out.println(r);
     }
-    public static int m(String s,String t) {
-     if (t.length() == 0) return 0;
+    public static int m(String s,String ta) {
+     if (ta.length() == 0) return 0;
 
-    for (int i = 0; i <= s.length() - t.length(); i++) {
+    for (int i = 0; i <= s.length() - ta.length(); i++) {
         int j = 0;
 
-        while (j < t.length() &&
-               s.charAt(i + j) == t.charAt(j)) {
+        while (j < ta.length() &&
+               s.charAt(i + j) == ta.charAt(j)) {
             j++;
         }
 
-        if (j == t.length()) {
+        if (j == ta.length()) {
             return i; 
         }
     }
